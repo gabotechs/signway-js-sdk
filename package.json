@@ -7,7 +7,7 @@
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "scripts": {
-    "test": "jest src/**.test.ts",
+    "test": "mocha --require ts-node/register src/**/*.test.ts",
     "build": "parcel build"
   },
   "keywords": [],
