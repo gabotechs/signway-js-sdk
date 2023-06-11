@@ -10,6 +10,9 @@
     "test": "mocha --require ts-node/register src/**/*.test.ts",
     "build": "parcel build"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "gabotehcs",
   "license": "MIT",
