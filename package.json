@@ -1,0 +1,22 @@
+{
+  "name": "signway-js-sdk",
+  "version": "0.1.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-ts": "2.9.2",
+    "@parcel/transformer-typescript-types": "2.9.2",
+    "parcel": "^2.9.2",
+    "typescript": "^5.1.3"
+  }
+}
