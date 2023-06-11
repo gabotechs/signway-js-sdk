@@ -16,7 +16,7 @@ console.log(signUrl({
   id: "my-id",
   secret: "my-secret",
   host: "https://api.signway.io",
-  proxy_url: "https://api.openai.com/v1/chat/completions",
+  proxyUrl: "https://api.openai.com/v1/chat/completions",
   expiry: 10,
   method: "POST"
 }))

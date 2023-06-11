@@ -8,6 +8,7 @@
   "types": "dist/types.d.ts",
   "scripts": {
     "test": "mocha --require ts-node/register src/**/*.test.ts",
+    "lint": "eslint src",
     "build": "parcel build"
   },
   "files": [
