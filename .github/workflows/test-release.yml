@@ -19,11 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
       - uses: actions/setup-node@v3
         with:
           cache: pnpm
           node-version: 18
-      - uses: pnpm/action-setup@v2
 
       - run: pnpm i
       - run: docker run -p 3000:3000 -d --name signway --rm gabotechs/signway my-id my-secret
@@ -42,11 +44,13 @@ jobs:
         with:
           fetch-depth: '0' # https://github.com/actions/checkout/issues/217
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
       - uses: actions/setup-node@v3
         with:
           cache: pnpm
           node-version: 18
-      - uses: pnpm/action-setup@v2
 
       - name: Tag
         id: tag
