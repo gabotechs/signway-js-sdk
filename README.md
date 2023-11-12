@@ -43,7 +43,7 @@ console.log(signUrl({
   * will be embedded into your signed url as a query parameter, that way
   * Signway will know where to proxy the request.
   */
-  proxyUrl: "https://api.openai.com/v1/chat/completions",
+  proxyUrl: "https://api.openai.com/v1/completions",
   /**
   * The validity period of signed URL in seconds. Signway will reject the request
   * if this number of seconds have happened since the signed URL was created.
