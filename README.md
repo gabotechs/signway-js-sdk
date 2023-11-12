@@ -61,7 +61,7 @@ console.log(signUrl({
   * Additional headers not present here can anyways be sent freely and Signway will
   * not take them into account for validating the request's signature.
   */
-  headers: { 'Content-Type' 'application/json' }
+  headers: { 'Content-Type': 'application/json' },
   /**
   * [Optional] which body to include in the signature. If provided, the final
   * HTTP request must include exactly this body, otherwise the Signway will reject
